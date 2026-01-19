@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - QBOTIX</title>
+    <meta name="description" content="View the QBOTIX journey through photos and moments">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="images/Qbotix logo.jpeg" alt="QBOTIX Logo" class="logo-img">
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="rover.html" class="nav-link">Rover</a></li>
+                <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+                <li><a href="team.html" class="nav-link">Team</a></li>
+                <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <a href="index.html#contact" class="nav-cta">Sponsor Us</a>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Moments</span>
+                <h2 class="section-title">Gallery</h2>
+                <p class="section-description">
+                    From concept to competition - our journey captured
+                </p>
+            </div>
+
+            <div class="gallery-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="design">Design</button>
+                <button class="filter-btn" data-filter="fabrication">Build</button>
+                <button class="filter-btn" data-filter="testing">Testing</button>
+                <button class="filter-btn" data-filter="team">Team</button>
+            </div>
+
+            <div class="gallery-grid">
+                <div class="gallery-item" data-category="design">
+                    <img src="images/Gallery/Gallery/CAD Design.jpg" alt="CAD Design">
+                    <div class="gallery-overlay">
+                        <h3>CAD Design</h3>
+                        <p>Precision engineering</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="fabrication">
+                    <img src="images/Gallery/Gallery/Chassis Build.jpg" alt="Chassis Build">
+                    <div class="gallery-overlay">
+                        <h3>Chassis Build</h3>
+                        <p>Manufacturing process</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="testing">
+                    <img src="images/Gallery/Gallery/Field Testing.jpg" alt="Field Testing">
+                    <div class="gallery-overlay">
+                        <h3>Field Testing</h3>
+                        <p>Performance validation</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="design">
+                    <img src="images/Gallery/Gallery/Arm Integration.jpg" alt="Arm Integration">
+                    <div class="gallery-overlay">
+                        <h3>Arm Integration</h3>
+                        <p>5-DOF manipulation</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="fabrication">
+                    <img src="images/Gallery/Gallery/Electronics.jpeg" alt="Electronics">
+                    <div class="gallery-overlay">
+                        <h3>Electronics</h3>
+                        <p>PCB assembly</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="testing">
+                    <img src="images/Gallery/Gallery/Autonomous Nav.jpg" alt="Autonomous Nav">
+                    <div class="gallery-overlay">
+                        <h3>Autonomous Nav</h3>
+                        <p>AI in action</p>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Behind the Scenes Section -->
+    <section class="behind-scenes-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">The Process</span>
+                <h2 class="section-title">Behind the Scenes</h2>
+                <p class="section-description">
+                    A glimpse into the dedication and hard work that goes into building a Mars rover
+                </p>
+            </div>
+
+            <div class="scenes-grid">
+                <div class="scene-card large">
+                    <video class="scene-video" muted loop autoplay playsinline poster="images/Gallery/Behind The Scenes/Late Night Sessions poster.jpg">
+                        <source src="images/Gallery/Behind The Scenes/Late Night Sessions.mp4" type="video/mp4">
+                    </video>
+                    <div class="scene-info">
+                        <h3>Late Night Sessions</h3>
+                        <p>
+                            Our team burning the midnight oil, perfecting every component. 
+                            From intricate PCB soldering to precision mechanical assembly, 
+                            countless hours of dedication shape our rover.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="scene-card">
+                    <img src="images/Gallery/Behind The Scenes/Celebration.jpeg" alt="Team Celebration">
+                    <div class="scene-info">
+                        <h3>Celebration</h3>
+                        <p>Celebrating happy moments and milestones with our rover</p>
+                    </div>
+                </div>
+
+                <div class="scene-card">
+                    <video class="scene-video" muted loop autoplay playsinline poster="images/Gallery/Behind The Scenes/Manufacturing excellence poster.jpg">
+                        <source src="images/Gallery/Behind The Scenes/Manufacturing excellence.mp4" type="video/mp4">
+                    </video>
+                    <div class="scene-info">
+                        <h3>Manufacturing Excellence</h3>
+                        <p>State-of-the-art fabrication facility</p>
+                    </div>
+                </div>
+
+                <div class="scene-card">
+                    <video class="scene-video" muted loop autoplay playsinline poster="images/Gallery/Behind The Scenes/Software Engineering poster.jpg">
+                        <source src="images/Gallery/Behind The Scenes/Software Engineering.mp4" type="video/mp4">
+                    </video>
+                    <div class="scene-info">
+                        <h3>Software Engineering</h3>
+                        <p>Developing autonomous navigation algorithms and AI vision systems</p>
+                    </div>
+                </div>
+
+                <div class="scene-card">
+                    <video class="scene-video" muted loop autoplay playsinline poster="images/Gallery/Behind The Scenes/Abex Chemical Testing poster.jpg">
+                        <source src="images/Gallery/Behind The Scenes/Abex Chemical Testing.mp4" type="video/mp4">
+                    </video>
+                    <div class="scene-info">
+                        <h3>Abex Chemical Testing</h3>
+                        <p>On-site soil sample testing using our advanced chemical analysis payload.</p>
+                    </div>
+                </div>
+
+                <div class="scene-card">
+                    <video class="scene-video" muted loop autoplay playsinline poster="images/Gallery/Behind The Scenes/Collaboration poster.jpg">
+                        <source src="images/Gallery/Behind The Scenes/Collaboration.mp4" type="video/mp4">
+                    </video>
+                    <div class="scene-info">
+                        <h3>Collaboration</h3>
+                        <p>Cross-domain brainstorming sessions driving innovation</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Milestones Section -->
+    <section class="milestones-gallery-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Achievements</span>
+                <h2 class="section-title">Key Milestones</h2>
+                <p class="section-description">
+                    Celebrating our journey and accomplishments
+                </p>
+            </div>
+
+            <div class="milestones-grid">
+                <div class="milestone-card">
+                    <div class="milestone-image-container">
+                        <img src="images/Gallery/Key Milestones/SDDR Submission.JPG" alt="SDDR Submission">
+                    </div>
+                    <div class="milestone-details">
+                        <div class="milestone-badge">November 2024</div>
+                        <h3>SDDR Submission</h3>
+                        <p>Comprehensive design document showcasing our innovation</p>
+                    </div>
+                </div>
+
+                <div class="milestone-card">
+                    <div class="milestone-image-container">
+                        <img src="images/Gallery/Key Milestones/SDDR Clearance.jpg" alt="SDDR Clearance">
+                    </div>
+                    <div class="milestone-details">
+                        <div class="milestone-badge">December 2024</div>
+                        <h3>SDDR Clearance</h3>
+                        <p>Design approved by international experts - mission is go!</p>
+                    </div>
+                </div>
+
+                <div class="milestone-card">
+                    <div class="milestone-image-container">
+                        <img src="images/Gallery/Key Milestones/First Integration.jpeg" alt="First Integration">
+                    </div>
+                    <div class="milestone-details">
+                        <div class="milestone-badge">January 2026</div>
+                        <h3>First Integration</h3>
+                        <p>Chassis and electronics successfully integrated - rover takes shape</p>
+                    </div>
+                </div>
+
+                <div class="milestone-card">
+                    <div class="milestone-image-container">
+                        <img src="images/Gallery/Key Milestones/Field Testing.jpeg" alt="Field Testing">
+                    </div>
+                    <div class="milestone-details">
+                        <div class="milestone-badge">January 2026</div>
+                        <h3>Field Testing</h3>
+                        <p>Real-world terrain testing and mission simulations</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>Team QBOTIX</h4>
+                    <p>Pioneering the future of Mars exploration through innovative robotics and autonomous systems</p>
+                    <div class="footer-social">
+                        <a href="https://www.linkedin.com/company/team-qbotix-rover" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://www.instagram.com/team_qbotix.rover/" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.youtube.com/@qbotix-rover" target="_blank"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="rover.html">Rover</a></li>
+                        <li><a href="team.html">Team</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Get Involved</h4>
+                    <ul>
+                        <li><a href="index.html#contact">Sponsor Us</a></li>
+                        <li><a href="index.html#contact">Join Team</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                        <li><a href="index.html">IRC 2026</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><i class="fas fa-envelope"></i> qbotix.rover@gmail.com</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Coimbatore, India</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Team QBOTIX. All rights reserved. | Built for IRC 2026</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.160.0/three.min.js"></script>
+    <script src="colorbends.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

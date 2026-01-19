@@ -1,0 +1,1014 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rover - QBOTIX</title>
+    <meta name="description" content="Explore the QBOTIX Mars Rover specifications and mission capabilities">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="images/Qbotix logo.jpeg" alt="QBOTIX Logo" class="logo-img">
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="rover.html" class="nav-link">Rover</a></li>
+                <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+                <li><a href="team.html" class="nav-link">Team</a></li>
+                <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <a href="index.html#contact" class="nav-cta">Sponsor Us</a>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Rover Section -->
+    <section id="rover" class="rover-section">
+        <!-- Floating Lines Background -->
+        <div id="floating-lines-bg" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 1;"></div>
+        
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Innovation</span>
+                <h2 class="section-title">Orbitron</h2>
+                <p class="section-description">
+                    State-of-the-art autonomous system engineered for Mars exploration
+                </p>
+            </div>
+
+            <div class="rover-showcase">
+                <div class="rover-main">
+                    <img src="images/rover 3d model.png" alt="QBOTIX Mars Rover 3D Model" class="rover-image">
+                </div>
+                <div class="rover-specs-card">
+                    <h3>Technical Specifications</h3>
+                    <div class="specs-grid">
+                        <div class="spec-item">
+                            <div class="spec-icon">
+                                <i class="fas fa-ruler-combined"></i>
+                            </div>
+                            <div class="spec-info">
+                                <span class="spec-label">Dimensions</span>
+                                <span class="spec-value">75x50x25 cm</span>
+                            </div>
+                        </div>
+                        <div class="spec-item">
+                            <div class="spec-icon">
+                                <i class="fas fa-weight"></i>
+                            </div>
+                            <div class="spec-info">
+                                <span class="spec-label">Weight</span>
+                                <span class="spec-value">45 kg</span>
+                            </div>
+                        </div>
+                        <div class="spec-item">
+                            <div class="spec-icon">
+                                <i class="fas fa-battery-full"></i>
+                            </div>
+                            <div class="spec-info">
+                                <span class="spec-label">Power</span>
+                                <span class="spec-value">24V & 12V Li-Po</span>
+                            </div>
+                        </div>
+                        <div class="spec-item">
+                            <div class="spec-icon">
+                                <i class="fas fa-cogs"></i>
+                            </div>
+                            <div class="spec-info">
+                                <span class="spec-label">Drive</span>
+                                <span class="spec-value">6-wheel rocker-bogie</span>
+                            </div>
+                        </div>
+                        <div class="spec-item">
+                            <div class="spec-icon">
+                                <i class="fas fa-tachometer-alt"></i>
+                            </div>
+                            <div class="spec-info">
+                                <span class="spec-label">Max Speed</span>
+                                <span class="spec-value">2 m/s</span>
+                            </div>
+                        </div>
+                        <div class="spec-item">
+                            <div class="spec-icon">
+                                <i class="fas fa-wifi"></i>
+                            </div>
+                            <div class="spec-info">
+                                <span class="spec-label">Comms</span>
+                                <span class="spec-value">5GHz</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Component Explorer Section -->
+            <div class="component-explorer-section">
+                <h3 class="explorer-title">Explore Components</h3>
+                <p class="explorer-subtitle">Click on any component to view detailed specifications and images</p>
+                
+                <div class="component-explorer">
+                    <!-- Component Menu (Left) -->
+                    <div class="component-menu">
+                        <button class="component-menu-item active" data-component="wheels">
+                            <i class="fas fa-circle-notch"></i>
+                            <span>Wheels</span>
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                        <button class="component-menu-item" data-component="suspension">
+                            <i class="fas fa-compress-arrows-alt"></i>
+                            <span>Suspension System</span>
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                        <button class="component-menu-item" data-component="chassis">
+                            <i class="fas fa-cube"></i>
+                            <span>Chassis</span>
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                        <button class="component-menu-item" data-component="arm">
+                            <i class="fas fa-hand-rock"></i>
+                            <span>Robotic Arm</span>
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                        <button class="component-menu-item" data-component="electronics">
+                            <i class="fas fa-microchip"></i>
+                            <span>Electronics</span>
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                        <button class="component-menu-item" data-component="cameras">
+                            <i class="fas fa-camera"></i>
+                            <span>Camera Systems</span>
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                        <button class="component-menu-item" data-component="sensors">
+                            <i class="fas fa-satellite-dish"></i>
+                            <span>GPS</span>
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                        <button class="component-menu-item" data-component="power">
+                            <i class="fas fa-battery-full"></i>
+                            <span>Power System</span>
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+
+                    <!-- Component Display (Center) -->
+                    <div class="component-display">
+                        <div class="component-image-container" id="wheels-img">
+                            <img src="images/wheel.jpeg" alt="Wheels System" style="width: 100%; height: 100%; object-fit: contain; border-radius: 12px;">
+                        </div>
+                        <div class="component-image-container hidden" id="suspension-img">
+                            <img src="images/suspension.jpeg" alt="Suspension System" style="width: 100%; height: 100%; object-fit: contain; border-radius: 12px;">
+                        </div>
+                        <div class="component-image-container hidden" id="chassis-img">
+                            <img src="images/chasis.jpeg" alt="Chassis Structure" style="width: 100%; height: 100%; object-fit: contain; border-radius: 12px;">
+                        </div>
+                        <div class="component-image-container hidden" id="arm-img">
+                            <img src="images/arm.jpeg" alt="Robotic Arm" style="width: 100%; height: 100%; object-fit: contain; border-radius: 12px;">
+                        </div>
+                        <div class="component-image-container hidden" id="electronics-img">
+                            <img src="images/electronics.png" alt="Electronics Bay" style="width: 100%; height: 100%; object-fit: contain; border-radius: 12px;">
+                        </div>
+                        <div class="component-image-container hidden" id="cameras-img">
+                            <img src="images/camera.png" alt="Camera Systems" style="width: 100%; height: 100%; object-fit: contain; border-radius: 12px;">
+                        </div>
+                        <div class="component-image-container hidden" id="sensors-img">
+                            <img src="images/gps.png" alt="GPS Array" style="width: 100%; height: 100%; object-fit: contain; border-radius: 12px;">
+                        </div>
+                        <div class="component-image-container hidden" id="power-img">
+                            <img src="images/power system.png" alt="Power System" style="width: 100%; height: 100%; object-fit: contain; border-radius: 12px;">
+                        </div>
+                    </div>
+
+                    <!-- Component Details (Right) -->
+                    <div class="component-details">
+                        <div class="component-detail-content active" id="wheels-detail">
+                            <h4>Wheels</h4>
+                            <div class="detail-badge">Mobility</div>
+                            <p class="detail-description">
+                                The wheels are designed for mobility on rough terrain. The outer layer provides shock absorption, while the hub provides structural rigidity.
+                            </p>
+                            <div class="detail-features">
+                                <h5>Key Features</h5>
+                                <ul>
+                                    <li><i class="fas fa-check"></i> Shock absorption and traction</li>
+                                    <li><i class="fas fa-check"></i> High structural rigidity</li>
+                                    <li><i class="fas fa-check"></i> Balanced and smooth movement</li>
+                                    <li><i class="fas fa-check"></i> 360° rotation capability</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="component-detail-content" id="suspension-detail">
+                            <h4>Suspension System</h4>
+                            <div class="detail-badge">Rocker-Bogie</div>
+                            <p class="detail-description">
+                                The rover has a suspension system with six wheels, designed to provide stability and untroubled movement over uneven terrains. This mechanism allows the rover to overcome obstacles without significant tilt or loss of traction.
+                            </p>
+                            <div class="detail-features">
+                                <h5>Key Features</h5>
+                                <ul>
+                                    <li><i class="fas fa-check"></i> Even distribution of load</li>
+                                    <li><i class="fas fa-check"></i> High tensile strength</li>
+                                    <li><i class="fas fa-check"></i> Lightweight structure</li>
+                                    <li><i class="fas fa-check"></i> Excellent stiffness</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="component-detail-content" id="chassis-detail">
+                            <h4>Chassis</h4>
+                            <div class="detail-badge">Structure</div>
+                            <p class="detail-description">
+                                The body of the rover is constructed using materials that provide a strong yet lightweight frame for all components, with high strength-to-weight ratio, corrosion resistance, and ease of fabrication.
+                            </p>
+                            <div class="detail-features">
+                                <h5>Key Features</h5>
+                                <ul>
+                                    <li><i class="fas fa-check"></i> Strong and lightweight frame</li>
+                                    <li><i class="fas fa-check"></i> Corrosion resistance</li>
+                                    <li><i class="fas fa-check"></i> Well-organized wiring</li>
+                                    <li><i class="fas fa-check"></i> Balanced design</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="component-detail-content" id="arm-detail">
+                            <h4>Robotic Arm</h4>
+                            <div class="detail-badge">Manipulation</div>
+                            <p class="detail-description">
+                                The robotic arm of the rover is made with multiple degrees of freedom to perform complex tasks such as sample collection and object manipulation with precision. The end effector features a gripper for accurate object handling.
+                            </p>
+                            <div class="detail-features">
+                                <h5>Key Features</h5>
+                                <ul>
+                                    <li><i class="fas fa-check"></i> High flexibility</li>
+                                    <li><i class="fas fa-check"></i> Wide range of motion</li>
+                                    <li><i class="fas fa-check"></i> Synchronized and stable control</li>
+                                    <li><i class="fas fa-check"></i> Secure gripping capability</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="component-detail-content" id="electronics-detail">
+                            <h4>Electronics</h4>
+                            <div class="detail-badge">Control System</div>
+                            <p class="detail-description">
+                                The control system is built around a microcontroller, which handles real-time tasks such as motor control and sensor feedback. The main computer, and microcontroller work in coordination.
+                            </p>
+                            <div class="detail-features">
+                                <h5>Key Features</h5>
+                                <ul>
+                                    <li><i class="fas fa-check"></i> Real-time processing</li>
+                                    <li><i class="fas fa-check"></i> AI vision and navigation</li>
+                                    <li><i class="fas fa-check"></i> Data logging and command routing</li>
+                                    <li><i class="fas fa-check"></i> Precise low-level control</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="component-detail-content" id="cameras-detail">
+                            <h4>Camera Systems</h4>
+                            <div class="detail-badge">Vision</div>
+                            <p class="detail-description">
+                                The rover transmits multiple video streams to the Base Station, which are visualized through custom-built Web GUIs. The primary camera is a stereo camera.
+                            </p>
+                            <div class="detail-features">
+                                <h5>Key Features</h5>
+                                <ul>
+                                    <li><i class="fas fa-check"></i> Depth-perceptive view</li>
+                                    <li><i class="fas fa-check"></i> Top-down view of chassis</li>
+                                    <li><i class="fas fa-check"></i> Close-up view for grasping</li>
+                                    <li><i class="fas fa-check"></i> Real-time streaming</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="component-detail-content" id="sensors-detail">
+                            <h4>GPS</h4>
+                            <div class="detail-badge">Navigation</div>
+                            <p class="detail-description">
+                                The rover is equipped with a GPS system for high-precision localization. The GPS data is a critical input for the position estimation of the rover.
+                            </p>
+                            <div class="detail-features">
+                                <h5>Key Features</h5>
+                                <ul>
+                                    <li><i class="fas fa-check"></i> GPS-guided missions</li>
+                                    <li><i class="fas fa-check"></i> Accurate environment reconstruction</li>
+                                    <li><i class="fas fa-check"></i> Logging GPS coordinates of objects</li>
+                                    <li><i class="fas fa-check"></i> Autonomous navigation to GPS coordinates</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="component-detail-content" id="power-detail">
+                            <h4>Power System</h4>
+                            <div class="detail-badge">Energy</div>
+                            <p class="detail-description">
+                                The rover runs on two separate batteries to keep the high-power and control circuits isolated. This prevents power fluctuations from affecting sensitive control components and ensures stable operation.
+                            </p>
+                            <div class="detail-features">
+                                <h5>Key Features</h5>
+                                <ul>
+                                    <li><i class="fas fa-check"></i> Isolated circuits</li>
+                                    <li><i class="fas fa-check"></i> Stable signal reference</li>
+                                    <li><i class="fas fa-check"></i> Handles AI and image processing</li>
+                                    <li><i class="fas fa-check"></i> Powers robotic arm and ABEX subsystem</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="component-explorer-mobile">
+                    <!-- Wheels -->
+                    <div class="component-card-mobile" data-component="wheels">
+                        <div class="component-card-mobile-header">
+                            <i class="fas fa-circle-notch"></i>
+                            <span>Wheels</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="component-card-mobile-body">
+                            <img src="images/wheel.jpeg" alt="Wheels System">
+                            <div class="component-mobile-badge">Mobility</div>
+                            <p class="component-mobile-description">
+                                The wheels are designed for mobility on rough terrain. The outer layer provides shock absorption, while the hub provides structural rigidity.
+                            </p>
+                            <div class="component-mobile-features">
+                                <h5>Key Features</h5>
+                                <ul>
+                                    <li><i class="fas fa-check"></i> Shock absorption and traction</li>
+                                    <li><i class="fas fa-check"></i> High structural rigidity</li>
+                                    <li><i class="fas fa-check"></i> Balanced and smooth movement</li>
+                                    <li><i class="fas fa-check"></i> 360° rotation capability</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Suspension System -->
+                    <div class="component-card-mobile" data-component="suspension">
+                        <div class="component-card-mobile-header">
+                            <i class="fas fa-compress-arrows-alt"></i>
+                            <span>Suspension System</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="component-card-mobile-body">
+                            <img src="images/suspension.jpeg" alt="Suspension System">
+                            <div class="component-mobile-badge">Rocker-Bogie</div>
+                            <p class="component-mobile-description">
+                                The rover has a suspension system with six wheels, designed to provide stability and untroubled movement over uneven terrains. This mechanism allows the rover to overcome obstacles without significant tilt or loss of traction.
+                            </p>
+                            <div class="component-mobile-features">
+                                <h5>Key Features</h5>
+                                <ul>
+                                    <li><i class="fas fa-check"></i> Even distribution of load</li>
+                                    <li><i class="fas fa-check"></i> High tensile strength</li>
+                                    <li><i class="fas fa-check"></i> Lightweight structure</li>
+                                    <li><i class="fas fa-check"></i> Excellent stiffness</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Chassis -->
+                    <div class="component-card-mobile" data-component="chassis">
+                        <div class="component-card-mobile-header">
+                            <i class="fas fa-cube"></i>
+                            <span>Chassis</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="component-card-mobile-body">
+                            <img src="images/chasis.jpeg" alt="Chassis Structure">
+                            <div class="component-mobile-badge">Structure</div>
+                            <p class="component-mobile-description">
+                                The body of the rover is constructed using materials that provide a strong yet lightweight frame for all components, with high strength-to-weight ratio, corrosion resistance, and ease of fabrication.
+                            </p>
+                            <div class="component-mobile-features">
+                                <h5>Key Features</h5>
+                                <ul>
+                                    <li><i class="fas fa-check"></i> Strong and lightweight frame</li>
+                                    <li><i class="fas fa-check"></i> Corrosion resistance</li>
+                                    <li><i class="fas fa-check"></i> Well-organized wiring</li>
+                                    <li><i class="fas fa-check"></i> Balanced design</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Robotic Arm -->
+                    <div class="component-card-mobile" data-component="arm">
+                        <div class="component-card-mobile-header">
+                            <i class="fas fa-hand-rock"></i>
+                            <span>Robotic Arm</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="component-card-mobile-body">
+                            <img src="images/arm.jpeg" alt="Robotic Arm">
+                            <div class="component-mobile-badge">Manipulation</div>
+                            <p class="component-mobile-description">
+                                The robotic arm of the rover is made with multiple degrees of freedom to perform complex tasks such as sample collection and object manipulation with precision. The end effector features a gripper for accurate object handling.
+                            </p>
+                            <div class="component-mobile-features">
+                                <h5>Key Features</h5>
+                                <ul>
+                                    <li><i class="fas fa-check"></i> High flexibility</li>
+                                    <li><i class="fas fa-check"></i> Wide range of motion</li>
+                                    <li><i class="fas fa-check"></i> Synchronized and stable control</li>
+                                    <li><i class="fas fa-check"></i> Secure gripping capability</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Electronics -->
+                    <div class="component-card-mobile" data-component="electronics">
+                        <div class="component-card-mobile-header">
+                            <i class="fas fa-microchip"></i>
+                            <span>Electronics</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="component-card-mobile-body">
+                            <img src="images/electronics.png" alt="Electronics Bay">
+                            <div class="component-mobile-badge">Control System</div>
+                            <p class="component-mobile-description">
+                                The control system is built around a microcontroller, which handles real-time tasks such as motor control and sensor feedback. The main computer, and microcontroller work in coordination.
+                            </p>
+                            <div class="component-mobile-features">
+                                <h5>Key Features</h5>
+                                <ul>
+                                    <li><i class="fas fa-check"></i> Real-time processing</li>
+                                    <li><i class="fas fa-check"></i> AI vision and navigation</li>
+                                    <li><i class="fas fa-check"></i> Data logging and command routing</li>
+                                    <li><i class="fas fa-check"></i> Precise low-level control</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Camera Systems -->
+                    <div class="component-card-mobile" data-component="cameras">
+                        <div class="component-card-mobile-header">
+                            <i class="fas fa-camera"></i>
+                            <span>Camera Systems</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="component-card-mobile-body">
+                            <img src="images/camera.png" alt="Camera Systems">
+                            <div class="component-mobile-badge">Vision</div>
+                            <p class="component-mobile-description">
+                                The rover transmits multiple video streams to the Base Station, which are visualized through custom-built Web GUIs. The primary camera is a stereo camera.
+                            </p>
+                            <div class="component-mobile-features">
+                                <h5>Key Features</h5>
+                                <ul>
+                                    <li><i class="fas fa-check"></i> Depth-perceptive view</li>
+                                    <li><i class="fas fa-check"></i> Top-down view of chassis</li>
+                                    <li><i class="fas fa-check"></i> Close-up view for grasping</li>
+                                    <li><i class="fas fa-check"></i> Real-time streaming</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- GPS -->
+                    <div class="component-card-mobile" data-component="sensors">
+                        <div class="component-card-mobile-header">
+                            <i class="fas fa-satellite-dish"></i>
+                            <span>GPS</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="component-card-mobile-body">
+                            <img src="images/gps.png" alt="GPS Array">
+                            <div class="component-mobile-badge">Navigation</div>
+                            <p class="component-mobile-description">
+                                The rover is equipped with a GPS system for high-precision localization. The GPS data is a critical input for the position estimation of the rover.
+                            </p>
+                            <div class="component-mobile-features">
+                                <h5>Key Features</h5>
+                                <ul>
+                                    <li><i class="fas fa-check"></i> GPS-guided missions</li>
+                                    <li><i class="fas fa-check"></i> Accurate environment reconstruction</li>
+                                    <li><i class="fas fa-check"></i> Logging GPS coordinates of objects</li>
+                                    <li><i class="fas fa-check"></i> Autonomous navigation to GPS coordinates</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Power System -->
+                    <div class="component-card-mobile" data-component="power">
+                        <div class="component-card-mobile-header">
+                            <i class="fas fa-battery-full"></i>
+                            <span>Power System</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="component-card-mobile-body">
+                            <img src="images/power system.png" alt="Power System">
+                            <div class="component-mobile-badge">Energy</div>
+                            <p class="component-mobile-description">
+                                The rover runs on two separate batteries to keep the high-power and control circuits isolated. This prevents power fluctuations from affecting sensitive control components and ensures stable operation.
+                            </p>
+                            <div class="component-mobile-features">
+                                <h5>Key Features</h5>
+                                <ul>
+                                    <li><i class="fas fa-check"></i> Isolated circuits</li>
+                                    <li><i class="fas fa-check"></i> Stable signal reference</li>
+                                    <li><i class="fas fa-check"></i> Handles AI and image processing</li>
+                                    <li><i class="fas fa-check"></i> Powers robotic arm and ABEX subsystem</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="missions-section">
+                <h3 class="missions-title">Mission Capabilities</h3>
+                <div class="mission-tabs">
+                    <button class="mission-tab active" data-mission="abex">
+                        <i class="fas fa-microscope"></i>
+                        <span>AbEx</span>
+                    </button>
+                    <button class="mission-tab" data-mission="rado">
+                        <i class="fas fa-map-marked-alt"></i>
+                        <span>RADO</span>
+                    </button>
+                    <button class="mission-tab" data-mission="idmo">
+                        <i class="fas fa-tools"></i>
+                        <span>IDMO</span>
+                    </button>
+                    <button class="mission-tab" data-mission="pima">
+                        <i class="fas fa-project-diagram"></i>
+                        <span>PIMA</span>
+                    </button>
+                    <button class="mission-tab" data-mission="bpp">
+                        <i class="fas fa-briefcase"></i>
+                        <span>BPP</span>
+                    </button>
+                </div>
+
+                <div class="mission-contents">
+                    <div class="mission-content active" id="abex">
+                        <div class="mission-header">
+                            <h4>Astrobiology Expedition</h4>
+                            <span class="mission-badge">Science</span>
+                        </div>
+                        <p class="mission-objective">
+                            <strong>Objective:</strong> Collect and analyze samples to identify sites capable of supporting microbial life and seek signs of extinct or extant life
+                        </p>
+                        <div class="mission-features">
+                            <div class="feature-item">
+                                <i class="fas fa-check"></i>
+                                <span>Subsurface soil sampling (≥10 cm depth, min 10g)</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-check"></i>
+                                <span>Onboard scientific analysis (temp, humidity, pH, pressure)</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-check"></i>
+                                <span>Site documentation with panoramas and GPS</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-check"></i>
+                                <span>Sample caching in sealed container</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mission-content" id="rado">
+                        <div class="mission-header">
+                            <h4>Reconnaissance & Autonomous Delivery Operation</h4>
+                            <span class="mission-badge">Navigation</span>
+                        </div>
+                        <p class="mission-objective">
+                            <strong>Objective:</strong> Search, locate, and autonomously deliver objects to designated GPS coordinates up to 500m away
+                        </p>
+                        <div class="mission-features">
+                            <div class="feature-item">
+                                <i class="fas fa-check"></i>
+                                <span>Reconnaissance to search and locate objects</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-check"></i>
+                                <span>Object documentation with GPS coordinates</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-check"></i>
+                                <span>Autonomous delivery to GPS locations</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-check"></i>
+                                <span>Object handling (tools, containers up to 5kg)</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mission-content" id="idmo">
+                        <div class="mission-header">
+                            <h4>Instrument Deployment & Maintenance Operation</h4>
+                            <span class="mission-badge">Manipulation</span>
+                        </div>
+                        <p class="mission-objective">
+                            <strong>Objective:</strong> Perform precise maintenance operations and deploy instrument caches using robotic manipulators
+                        </p>
+                        <div class="mission-features">
+                            <div class="feature-item">
+                                <i class="fas fa-check"></i>
+                                <span>Panel operations (buttons, switches, knobs, joystick)</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-check"></i>
+                                <span>Cache retrieval and drawer operations</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-check"></i>
+                                <span>Electrical plug connections</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-check"></i>
+                                <span>Code/pattern recognition and deployment</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mission-content" id="pima">
+                        <div class="mission-header">
+                            <h4>Project Implementation & Management Assessment</h4>
+                            <span class="mission-badge">Engineering</span>
+                        </div>
+                        <p class="mission-objective">
+                            <strong>Objective:</strong> Present rover development lifecycle covering system engineering and project management aspects
+                        </p>
+                        <div class="mission-features">
+                            <div class="feature-item">
+                                <i class="fas fa-check"></i>
+                                <span>System design and architecture review</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-check"></i>
+                                <span>Manufacturing and testing processes</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-check"></i>
+                                <span>Lessons learned throughout development</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-check"></i>
+                                <span>Project spin-offs and innovations</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mission-content" id="bpp">
+                        <div class="mission-header">
+                            <h4>Business & Partnership Plan</h4>
+                            <span class="mission-badge">Strategy</span>
+                        </div>
+                        <p class="mission-objective">
+                            <strong>Objective:</strong> Develop business acumen and build partnerships with industry and academia for project development
+                        </p>
+                        <div class="mission-features">
+                            <div class="feature-item">
+                                <i class="fas fa-check"></i>
+                                <span>Business plan for rover and team</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-check"></i>
+                                <span>Industry and academic partnerships</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-check"></i>
+                                <span>Sponsorship and funding strategies</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-check"></i>
+                                <span>Real-world application planning</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technology Stack Section -->
+    <section class="tech-stack-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Engineering Excellence</span>
+                <h2 class="section-title">Technology Stack</h2>
+                <p class="section-description">
+                    Cutting-edge technologies powering our Mars rover
+                </p>
+            </div>
+
+            <div class="tech-categories">
+                <div class="tech-category">
+                    <div class="category-header">
+                        <i class="fas fa-laptop-code"></i>
+                        <h3>Software & Autonomy</h3>
+                    </div>
+                    <div class="tech-items">
+                        <div class="tech-item">
+                            <span class="tech-name">ROS 2 Humble</span>
+                            <span class="tech-desc">Robot Operating System for distributed computing</span>
+                        </div>
+                        <div class="tech-item">
+                            <span class="tech-name">Python & C++</span>
+                            <span class="tech-desc">Primary programming languages for algorithms</span>
+                        </div>
+                        <div class="tech-item">
+                            <span class="tech-name">OpenCV</span>
+                            <span class="tech-desc">Computer vision and image processing</span>
+                        </div>
+                        <div class="tech-item">
+                            <span class="tech-name">YOLOv8</span>
+                            <span class="tech-desc">Deep learning framework for AI models</span>
+                        </div>
+                        <div class="tech-item">
+                            <span class="tech-name">RTAB-Map</span>
+                            <span class="tech-desc">Simultaneous localization and mapping</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tech-category">
+                    <div class="category-header">
+                        <i class="fas fa-microchip"></i>
+                        <h3>Electronics & Control</h3>
+                    </div>
+                    <div class="tech-items">
+                        <div class="tech-item">
+                            <span class="tech-name">Onboard Computer</span>
+                            <span class="tech-desc">AI-powered edge computing platform</span>
+                        </div>
+                        <div class="tech-item">
+                            <span class="tech-name">Microcontrollers</span>
+                            <span class="tech-desc">Motor control and sensor interfacing</span>
+                        </div>
+                        <div class="tech-item">
+                            <span class="tech-name">Custom PCBs</span>
+                            <span class="tech-desc">In-house designed power and control boards</span>
+                        </div>
+                        <div class="tech-item">
+                            <span class="tech-name">Motor Drivers</span>
+                            <span class="tech-desc">High-efficiency brushless drive systems</span>
+                        </div>
+                        <div class="tech-item">
+                            <span class="tech-name">IMU & GPS</span>
+                            <span class="tech-desc">Precision navigation GPS</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tech-category">
+                    <div class="category-header">
+                        <i class="fas fa-drafting-compass"></i>
+                        <h3>Mechanical Design</h3>
+                    </div>
+                    <div class="tech-items">
+                        <div class="tech-item">
+                            <span class="tech-name">Fusion 360</span>
+                            <span class="tech-desc">3D CAD modeling and simulation</span>
+                        </div>
+                        <div class="tech-item">
+                            <span class="tech-name">ANSYS</span>
+                            <span class="tech-desc">Finite element analysis and stress testing</span>
+                        </div>
+                        <div class="tech-item">
+                            <span class="tech-name">Aluminum Alloy</span>
+                            <span class="tech-desc">Lightweight yet durable chassis material</span>
+                        </div>
+                        <div class="tech-item">
+                            <span class="tech-name">Rocker-Bogie</span>
+                            <span class="tech-desc">NASA-inspired suspension system</span>
+                        </div>
+                        <div class="tech-item">
+                            <span class="tech-name">5-DOF Arm</span>
+                            <span class="tech-desc">Robotic manipulator with precision control</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tech-category">
+                    <div class="category-header">
+                        <i class="fas fa-camera"></i>
+                        <h3>GPS & Instruments</h3>
+                    </div>
+                    <div class="tech-items">
+                        <div class="tech-item">
+                            <span class="tech-name">Stereo Camera</span>
+                            <span class="tech-desc">Depth perception and 3D mapping</span>
+                        </div>
+                        <div class="tech-item">
+                            <span class="tech-name">LiDAR</span>
+                            <span class="tech-desc">360° terrain scanning and obstacle detection</span>
+                        </div>
+                        <div class="tech-item">
+                            <span class="tech-name">Spectrometer</span>
+                            <span class="tech-desc">Soil and mineral composition analysis</span>
+                        </div>
+                        <div class="tech-item">
+                            <span class="tech-name">Environmental Sensors</span>
+                            <span class="tech-desc">BME688, NPK, and O2 sensors</span>
+                        </div>
+                        <div class="tech-item">
+                            <span class="tech-name">HD Cameras</span>
+                            <span class="tech-desc">High-resolution imagery and video transmission</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Development Progress Section -->
+    <section class="progress-section">
+        <!-- Floating Lines Background -->
+        <div id="progress-floating-lines" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 1;"></div>
+        
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Current Status</span>
+                <h2 class="section-title">Development Progress</h2>
+                <p class="section-description">
+                    Real-time updates on our rover's construction and testing
+                </p>
+            </div>
+
+            <div class="progress-grid">
+                <div class="progress-card">
+                    <div class="progress-header">
+                        <h3>Mechanical Assembly</h3>
+                        <span class="progress-percentage">100%</span>
+                    </div>
+                    <div class="progress-bar-container">
+                        <div class="progress-bar" style="width: 100%"></div>
+                    </div>
+                    <p class="progress-status">
+                        The design and fabrication of the mechanical structure of the rover has been completed.
+                    </p>
+                    <div class="progress-checklist">
+                        <div class="checklist-item completed">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Chassis fabrication</span>
+                        </div>
+                        <div class="checklist-item completed">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Suspension system</span>
+                        </div>
+                        <div class="checklist-item completed">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Arm integration</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="progress-card">
+                    <div class="progress-header">
+                        <h3>Electronics & PCBs</h3>
+                        <span class="progress-percentage">80%</span>
+                    </div>
+                    <div class="progress-bar-container">
+                        <div class="progress-bar" style="width: 80%"></div>
+                    </div>
+                    <p class="progress-status">
+                        The Electrocore domain is focused on developing stable long-range communication to support overall rover operations.
+                    </p>
+                    <div class="progress-checklist">
+                        <div class="checklist-item completed">
+                            <i class="fas fa-check-circle"></i>
+                            <span>PCB design & fabrication</span>
+                        </div>
+                        <div class="checklist-item completed">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Power management</span>
+                        </div>
+                        <div class="checklist-item in-progress">
+                            <i class="fas fa-circle-notch"></i>
+                            <span>Sensor integration</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="progress-card">
+                    <div class="progress-header">
+                        <h3>Software & AI</h3>
+                        <span class="progress-percentage">75%</span>
+                    </div>
+                    <div class="progress-bar-container">
+                        <div class="progress-bar" style="width: 75%"></div>
+                    </div>
+                    <p class="progress-status">
+                        The AI domain is currently working on a model to detect cones. The ROS team is working on the application of EKF.
+                    </p>
+                    <div class="progress-checklist">
+                        <div class="checklist-item completed">
+                            <i class="fas fa-check-circle"></i>
+                            <span>ROS2 framework setup</span>
+                        </div>
+                        <div class="checklist-item in-progress">
+                            <i class="fas fa-circle-notch"></i>
+                            <span>AI vision training</span>
+                        </div>
+                        <div class="checklist-item in-progress">
+                            <i class="fas fa-circle-notch"></i>
+                            <span>EKF integration</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="progress-card">
+                    <div class="progress-header">
+                        <h3>Testing & Validation</h3>
+                        <span class="progress-percentage">50%</span>
+                    </div>
+                    <div class="progress-bar-container">
+                        <div class="progress-bar" style="width: 50%"></div>
+                    </div>
+                    <p class="progress-status">
+                        The rover is tested across various terrains. The reliability and endurance of the rover is tested through various checks.
+                    </p>
+                    <div class="progress-checklist">
+                        <div class="checklist-item completed">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Component testing</span>
+                        </div>
+                        <div class="checklist-item in-progress">
+                            <i class="fas fa-circle-notch"></i>
+                            <span>Integration testing</span>
+                        </div>
+                        <div class="checklist-item in-progress">
+                            <i class="fas fa-circle-notch"></i>
+                            <span>Field trials</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>Team QBOTIX</h4>
+                    <p>Pioneering the future of Mars exploration through innovative robotics and autonomous systems</p>
+                    <div class="footer-social">
+                        <a href="https://www.linkedin.com/company/team-qbotix-rover" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://www.instagram.com/team_qbotix.rover/" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.youtube.com/@qbotix-rover" target="_blank"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="rover.html">Rover</a></li>
+                        <li><a href="team.html">Team</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Get Involved</h4>
+                    <ul>
+                        <li><a href="index.html#contact">Sponsor Us</a></li>
+                        <li><a href="index.html#contact">Join Team</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                        <li><a href="index.html">IRC 2026</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><i class="fas fa-envelope"></i> qbotix.rover@gmail.com</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Coimbatore, India</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Team QBOTIX. All rights reserved. | Built for IRC 2026</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.160.0/three.min.js"></script>
+    <script src="floatinglines.js"></script>
+    <script src="colorbends.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
