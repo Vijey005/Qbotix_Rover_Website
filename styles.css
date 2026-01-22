@@ -1,3 +1,68 @@
+/* Mentor Card Customization */
+
+
+.player-card.mentor .player-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 18px;
+}
+
+.player-card.mentor .player-name {
+    font-weight: bold;
+    color: #fff;
+    font-size: 1.02rem;
+    text-align: center;
+    margin-bottom: 0.3em;
+    line-height: 1.2;
+}
+
+.player-card.captain .player-name {
+    font-weight: bold;
+    color: #fff;
+    font-size: 1.02rem;
+    text-align: center;
+    margin-bottom: 0.3em;
+    line-height: 1.2;
+}
+
+.player-card.mentor .player-role-title {
+    color: #ffe14a;
+    font-size: 1.05rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 0.3em;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+.player-card.mentor .player-role-description {
+    color: #fff;
+    font-size: 1.05rem;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 0.3em;
+    letter-spacing: 0.5px;
+}
+
+/* Ensure all mentor text is vertically stacked and centered */
+.player-card.mentor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+/* Captain/Lead Highlight */
+.player-card.captain .player-role {
+    color: #ffe14a;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 1.05rem;
+    margin-top: 8px;
+    letter-spacing: 1px;
+}
 /* ===== RESET & ROOT ===== */
 * {
     margin: 0;
@@ -3620,20 +3685,73 @@ img {
 
 .lineup-field {
     position: relative;
-    padding: 1rem 0;
+    padding: 0.5rem 0 0.5rem 0;
+    min-height: unset;
+    height: auto;
 }
 
 /* Leadership Row */
 .leadership-row {
     display: flex;
+    flex-direction: row;
     justify-content: center;
+    align-items: flex-start;
     gap: 2rem;
-    margin-bottom: 2.5rem;
-    flex-wrap: wrap;
-    padding: 1.5rem;
+    margin-bottom: 1.2rem;
+    flex-wrap: nowrap !important;
+    padding: 0.7rem 0.2rem 0.7rem 0.2rem;
     background: linear-gradient(135deg, rgba(255, 107, 53, 0.1) 0%, transparent 100%);
     border-radius: 15px;
     border: 1px solid rgba(255, 107, 53, 0.2);
+    width: 100%;
+    min-height: 0;
+@media (max-width: 900px) {
+    .leadership-row {
+        gap: 0.7rem;
+        padding: 0.4rem 0.1rem 0.4rem 0.1rem;
+        flex-wrap: nowrap !important;
+    }
+    .leadership-row .player-card {
+        max-width: 32vw;
+        min-width: 120px;
+    }
+}
+
+@media (max-width: 600px) {
+    .leadership-row {
+        flex-direction: row !important;
+        flex-wrap: nowrap !important;
+        gap: 0.2rem;
+        padding: 0.1rem 0.1rem 0.1rem 0.1rem;
+        width: 100%;
+        min-height: 0;
+    }
+    .leadership-row .player-card {
+        max-width: 33vw;
+        min-width: 100px;
+        margin: 0 1px;
+        padding: 0.2rem 0.1rem;
+    }
+    .player-card.mentor .player-photo,
+    .player-card.captain .player-photo {
+        width: 80px;
+        height: 80px;
+    }
+    .player-info {
+        margin-top: 0.2rem;
+    }
+    .player-card.mentor .player-name,
+    .player-card.captain .player-name {
+        font-size: 0.85rem;
+    }
+    .player-card.mentor .player-role-title,
+    .player-card.captain .player-role {
+        font-size: 0.85rem;
+    }
+    .player-card.mentor .player-role-description {
+        font-size: 0.75rem;
+    }
+}
 }
 
 /* Player Card */
@@ -4291,9 +4409,46 @@ img {
 
 /* Responsive */
 @media screen and (max-width: 768px) {
+
     .leadership-row {
-        gap: 1rem;
-        padding: 1rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 2.5rem;
+        padding: 2.5rem 1rem 2rem 1rem;
+    }
+
+    .leadership-row .player-card {
+        flex: 1 1 260px;
+        max-width: 320px;
+        min-width: 220px;
+        margin: 0 10px;
+    }
+
+    @media (max-width: 900px) {
+        .leadership-row {
+            gap: 1.2rem;
+            padding: 1.5rem 0.5rem 1.2rem 0.5rem;
+        }
+        .leadership-row .player-card {
+            max-width: 90vw;
+            min-width: 180px;
+        }
+    }
+
+    @media (max-width: 600px) {
+        .leadership-row {
+            flex-direction: column;
+            align-items: center;
+            gap: 1.5rem;
+            padding: 1.2rem 0.2rem 1.2rem 0.2rem;
+        }
+        .leadership-row .player-card {
+            max-width: 98vw;
+            min-width: 0;
+            margin: 0;
+        }
     }
     
     .player-photo {
